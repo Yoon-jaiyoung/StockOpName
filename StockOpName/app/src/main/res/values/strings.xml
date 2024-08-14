@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Stock Opname</string>
+
+    <string name="Factory">Factory</string>
+    <string name="Username">ID</string>
+    <string name="Location">Location</string>
+    <string name="Order">Order Number</string>
+
+    <string name="Ok">START</string>
+    <string name="Stat">View Text Files</string>
+
+    <string name="Saved">Saved Text Files</string>
+    <string name="Upload">Upload Text Files</string>
+    <string name="Delete">Delete This File</string>
+    <string name="Copy">Copy To Download Folder</string>
+</resources>

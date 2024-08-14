@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fac_array">
+        <item>FAC</item>
+        <item>PWI</item>
+        <item>PWN</item>
+        <item>PWJ</item>
+        <item>PWA</item>
+        <item>PNP</item>
+    </string-array>
+    <string-array name="grade_array">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+    </string-array>
+</resources>

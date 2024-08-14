@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.parkland.stockopname.FG_MainActivity_Offline"
+    android:background="@drawable/centre_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:focusable="false"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/infoCard"
+
+            style="@style/scanTitleCardDesign"
+            android:layout_weight="1"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvFac"
+                    style="@style/infoTextView"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/whiteTextColor" />
+
+
+                <TextView
+                    android:id="@+id/tvLoc"
+                    style="@style/infoTextView"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center|center_vertical"
+                    android:textColor="@color/whiteTextColor" />
+
+                <TextView
+                    android:id="@+id/tvID"
+                    style="@style/infoTextView"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/whiteTextColor" />
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    style="@style/infoTextView"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:textColor="@color/whiteTextColor" />
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/scanCard"
+            style="@style/scanCardDesign"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/tvBarcode"-->
+                <!--                    style="@style/infoTextView"-->
+                <!--                    android:layout_width="0dp"-->
+                <!--                    android:layout_height="match_parent"-->
+                <!--                    android:layout_weight="1"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:text="Barcode"-->
+                <!--                    android:textColor="@color/colorPrimaryDark" />-->
+
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+
+                    android:paddingLeft="10dp"
+                    android:src="@drawable/barcode" />
+
+                <EditText
+                    android:id="@+id/etBarcode"
+                    style="@style/modifiedEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:hint="Barcode"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:nextFocusDown="@+id/etBarcode"
+                    android:nextFocusForward="@+id/etBarcode"
+                    android:nextFocusLeft="@+id/etBarcode"
+                    android:nextFocusRight="@+id/etBarcode"
+                    android:nextFocusUp="@+id/etBarcode"
+                    android:inputType="number"
+                    />
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:focusable="false"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/recordCard"
+            style="@style/scanCardDesign"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="false"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView5"
+
+                    style="@style/HeaderText"
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="No" />
+
+                <TextView
+                    android:id="@+id/textView6"
+
+                    style="@style/HeaderText"
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="Barcode" />
+
+                <TextView
+                    android:id="@+id/textView7"
+
+                    style="@style/HeaderText"
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="TIME" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

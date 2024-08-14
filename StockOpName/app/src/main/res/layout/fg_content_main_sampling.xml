@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollFeed"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/centre_background"
+    android:focusableInTouchMode="true"
+    android:padding="5dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.parkland.stockopname.FG_MainActivity_Sampling"
+    tools:showIn="@layout/fg_activity_main_sampling">
+
+    <LinearLayout
+        android:id="@+id/content_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/infoDetailsCard"
+            style="@style/centreLocatorCardDesign"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="4"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:focusableInTouchMode="false"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:scrollbarDefaultDelayBeforeFade="200">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/fac_spinner"
+                        style="@style/SpinnerDesign"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/whiteTextColor"
+                        android:dropDownWidth="100dp"
+                        android:popupBackground="@android:color/transparent"
+                        android:spinnerMode="dropdown" />
+
+                    <Button
+                        android:id="@+id/loc_button"
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@color/whiteTextColor"
+
+                        android:popupBackground="@android:color/transparent"
+                        android:text="LOCATION"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtInputID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/txtID"
+                        style="@style/modifiedEditText"
+                        android:hint="@string/Username"
+                        android:inputType="textCapCharacters"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtInputONO"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/txtONO"
+                        style="@style/modifiedEditText"
+                        android:hint="@string/Order"
+                        android:inputType="textCapCharacters"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="GRADE"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12sp" />
+
+                        <Spinner
+                            android:id="@+id/grade_spinner"
+                            style="@style/SpinnerDesign"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:background="@color/whiteTextColor"
+                            android:dropDownWidth="100dp"
+                            android:popupBackground="@android:color/transparent"
+                            android:spinnerMode="dropdown" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/stockno_button"
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@color/whiteTextColor"
+
+                        android:popupBackground="@android:color/transparent"
+                        android:text="STOCK OPNAME NO"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnSend"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/centre_button"
+                        android:text="@string/Ok"
+                        android:textColor="@color/whiteTextColor" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
